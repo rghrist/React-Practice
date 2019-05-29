@@ -1,6 +1,6 @@
 import React from 'react';
 import Box from './Box';
-
+import './Row.css';
 import { css } from '@emotion/core';
 
 const rowStyle=css({
@@ -8,11 +8,21 @@ const rowStyle=css({
     justifyContent:'content',
 })
 
-const Row = ({boxes}) =>(
+const Row = ({firstRow,lastRow,boxes,onClick,rowIndex}) =>(
 
-    <div className='rowStyle'>
+    <div style={{display:'flex',justifyContent:'center'}}>
         {boxes.map((box, index) =>(
-            <Box key={index}/>
+        <Box  firstRow={firstRow}
+              lastRow={lastRow} 
+              firstIndex={index===0}
+              lastIndex={index===boxes.length-1} 
+              onClick={onClick}
+              size={100}
+              key={index}  
+              columnIndex={index}
+              rowIndex={rowIndex}
+              value={box}
+        />
         ) )}
     </div>);
 

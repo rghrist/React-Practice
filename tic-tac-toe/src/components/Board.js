@@ -8,8 +8,13 @@ class Board extends React.Component{
     return(
     <div>
         {this.props.rows.map((row,index)=>(
-            <Row key={index} boxes={row}/>
-
+            <Row firstRow={index===0} 
+                 lastRow={index===this.props.rows.length-1} 
+                 boxes={row}
+                 key={index}
+                 onClick={this.props.onClick}
+                 rowIndex={index}
+                 />
         ))}
     </div>
     );

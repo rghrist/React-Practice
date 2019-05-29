@@ -1,0 +1,4 @@
+.rowStyle Box{
+    display: 'flex';
+    justify-content:'content';
+}

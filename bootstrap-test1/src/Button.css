@@ -1,0 +1,11 @@
+.button1 {
+    display: flex ;
+    align-items:center;
+    margin: auto;
+}
+
+.button2 button{
+    display: flex ;
+    align-items:center;
+    margin: auto;
+}

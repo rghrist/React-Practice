@@ -19,7 +19,7 @@ const Box = ({firstRow,lastRow,firstIndex,lastIndex,onClick,size=60,columnIndex,
         borderBottom:lastRow ? 'none':border,
         borderLeft:!firstIndex && border,//alternative style
         borderRight:!lastIndex && border,
-        fontSize:size*.8,
+        fontSize:size*.8, //what is the importance of .8 ?
         height:size,
         width:size,
         display: 'flex',

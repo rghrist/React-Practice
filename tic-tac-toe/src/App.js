@@ -2,6 +2,7 @@
     code blocks need to be indented to show where the scope actually exists at
     vertical height is your friend and makes code easier to use
       - there should be new lines after methods and things like loops or if checks
+      App should be renamed to represent what it is
 */
 
 
